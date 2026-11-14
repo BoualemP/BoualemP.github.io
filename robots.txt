@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://boualemp.github.io/sitemap.xml
