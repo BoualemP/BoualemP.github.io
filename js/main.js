@@ -2,6 +2,15 @@
 
 const LANG_KEY = "lang";
 const currentLang = document.body.dataset.lang;
+const isLocalFile = window.location.protocol === "file:";
+
+// Opened from the computer (file://): folders do not open their index.html, so link to it directly.
+if (isLocalFile) {
+  document.querySelectorAll(".lang-switch a").forEach((link) => {
+    const href = link.getAttribute("href");
+    link.setAttribute("href", (href.endsWith("/") || href === "" ? href : href + "/") + "index.html");
+  });
+}
 
 function savedLanguage() {
   try { return localStorage.getItem(LANG_KEY); } catch (e) { return null; }
@@ -15,7 +24,7 @@ function saveLanguage(lang) {
 if (currentLang === "en" && !savedLanguage()
     && navigator.language && navigator.language.toLowerCase().startsWith("pt")) {
   saveLanguage("pt");
-  window.location.replace("pt/" + window.location.hash);
+  window.location.replace((isLocalFile ? "pt/index.html" : "pt/") + window.location.hash);
 }
 
 // Remember an explicit language choice.
