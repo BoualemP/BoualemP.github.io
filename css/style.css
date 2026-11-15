@@ -198,3 +198,12 @@ a:focus-visible, button:focus-visible {
   .hero { padding: 4rem 0 3.5rem; }
   .section { padding: 3.5rem 0; }
 }
+
+/* Project card with several links (web app) */
+.project-app:hover { transform: none; }
+.project-app .badge { font-family: var(--body, inherit); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-ink); border: 1px solid var(--accent-ink); border-radius: 4px; padding: 0.05rem 0.35rem; vertical-align: middle; margin-left: 0.3rem; }
+.project-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin-top: 0.75rem; }
+.card .project-links a { color: var(--blue); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
+.card .project-links a:hover { text-decoration: underline; }
+.card p.project-note { font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
+.project-app > p:not(.tags):not(.project-links):not(.project-note) { color: var(--muted); }
