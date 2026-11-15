@@ -16,6 +16,7 @@
   <meta property="og:image" content="https://boualemp.github.io/assets/og.jpg">
   <meta property="og:locale" content="pt_PT">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0f1a2e">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,10 +38,11 @@
   </script>
 </head>
 <body data-lang="pt">
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
 
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#top" class="brand">Boualem Pereira</a>
+      <a href="#main" class="brand" translate="no">Boualem Pereira</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
       <nav class="nav-links" id="main-nav" aria-label="Main">
         <a href="#about">Sobre</a>
@@ -55,20 +57,20 @@
     </div>
   </header>
 
-  <main id="top">
+  <main id="main">
 
     <section class="hero">
       <div class="container hero-grid">
         <div>
           <p class="eyebrow">Desenvolvimento web · Python · Dados</p>
-          <h1>Boualem Pereira</h1>
+          <h1 translate="no">Boualem Pereira</h1>
           <p class="lead">Websites, automações e análise de dados para empresas de qualquer dimensão.</p>
           <div class="hero-actions">
             <a href="#services" class="btn btn-primary">Ver serviços</a>
             <a href="#contact" class="btn btn-ghost">Falar comigo</a>
           </div>
         </div>
-        <img class="avatar" src="../assets/photo.jpg" alt="Fotografia de Boualem Pereira" width="200" height="200">
+        <img class="avatar" src="../assets/photo.jpg" alt="Fotografia de Boualem Pereira" width="200" height="200" fetchpriority="high">
       </div>
     </section>
 
@@ -148,27 +150,27 @@
         <h3 class="group-title">Projetos de dados</h3>
         <div class="cards cards-projects">
           <a class="card project" href="https://github.com/BoualemP/equity-data-pipeline-tsla-gme" target="_blank" rel="noopener">
-            <h4>Equity Data Pipeline: Tesla and GameStop</h4>
+            <h4 translate="no">Equity Data Pipeline: Tesla and GameStop</h4>
             <p class="tags">APIs · Web scraping · Data validation</p>
             <p>398 valores de receita extraídos de relatórios da SEC, todos iguais aos dados oficiais estruturados.</p>
           </a>
           <a class="card project" href="https://github.com/BoualemP/well-log-ml-from-scratch" target="_blank" rel="noopener">
-            <h4>Well-Log ML from Scratch</h4>
+            <h4 translate="no">Well-Log ML from Scratch</h4>
             <p class="tags">NumPy · Regression · Geoscience</p>
             <p>Registo PE reconstruído em poços não usados no treino: RMSE 0,530 contra 0,739 da referência.</p>
           </a>
           <a class="card project" href="https://github.com/BoualemP/house-price-estimator" target="_blank" rel="noopener">
-            <h4>House Price Estimator</h4>
+            <h4 translate="no">House Price Estimator</h4>
             <p class="tags">Regression · Time-based validation</p>
             <p>Erro mediano de avaliação de 10,3%, metade do da referência por código postal.</p>
           </a>
           <a class="card project" href="https://github.com/BoualemP/credit-risk-classifier" target="_blank" rel="noopener">
-            <h4>Credit Risk Classifier</h4>
+            <h4 translate="no">Credit Risk Classifier</h4>
             <p class="tags">Classification · Explainable models</p>
             <p>13 de 14 incumprimentos detetados por uma árvore de decisão com duas regras.</p>
           </a>
           <a class="card project" href="https://github.com/BoualemP/chicago-sql-analytics" target="_blank" rel="noopener">
-            <h4>Chicago SQL Analytics</h4>
+            <h4 translate="no">Chicago SQL Analytics</h4>
             <p class="tags">SQL · Database design</p>
             <p>Esquema, restrições, triggers, vistas e funções de janela sobre dados abertos da cidade.</p>
           </a>
@@ -202,7 +204,7 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year">2026</span> Boualem Pereira</p>
+      <p>© <span id="year">2026</span> <span translate="no">Boualem Pereira</span></p>
       <p><a href="https://www.linkedin.com/in/boualem-pereira/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/BoualemP" target="_blank" rel="noopener">GitHub</a></p>
     </div>
   </footer>
